@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mohor_style.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>emailjs.init("pYbFHj2eGJLwfIQaz");</script>
 <body>
 
 <!-- Custom cursor -->
@@ -20,7 +22,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects (10)</a></li>
+    <li><a href="#projects">Projects (10+)</a></li>
     <li><a href="#certifications">Certificates</a></li>
     <li><a href="#internships">Internships</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -243,8 +245,8 @@
           <span class="ptag">Web3.js</span><span class="ptag">React</span>
         </div>
         <div class="p-links">
-          <a href="#" class="p-link demo">⬡ Live Demo ↗</a>
-          <a href="#" class="p-link">⌥ GitHub ↗</a>
+          <a href="#" class="p-link demo" onclick="document.getElementById('blockchain-modal').style.display='flex';return false;">⬡ Live Demo ↗</a>
+          <a href="https://github.com/Mohor605/D_Evoting-college-project" class="p-link">⌥ GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -262,8 +264,8 @@
           <span class="ptag">Stripe</span><span class="ptag">JWT</span>
         </div>
         <div class="p-links">
-          <a href="#" class="p-link demo">⬡ Live Demo ↗</a>
-          <a href="#" class="p-link">⌥ GitHub ↗</a>
+          <a href="#" class="p-link demo" onclick="document.getElementById('medico-modal').style.display='flex';return false;">⬡ Live Demo ↗</a>
+          <a href="https://github.com/Mohor605/Medico-App" class="p-link">⌥ GitHub ↗</a>
         </div>
       </div>
     </div>
@@ -287,22 +289,15 @@
       </div>
     </div>
 
-    <!-- 4. Weather Dashboard -->
-    <div class="pcard cat-weather reveal" data-cat="cat-weather">
-      <div class="pthumb t-weather"><img src="wd.jpeg" style="width:80%;height:100%;object-fit:cover;border-radius:inherit;"><span class="pthumb-label">API · Dashboard</span></div>
+    <!-- 4. E-Commerce Website -->
+    <div class="pcard small cat-fullstack reveal" data-cat="cat-fullstack">
+      <div class="pthumb t-ecom">🛒<span class="pthumb-label">E-Commerce</span></div>
       <div class="pbody">
-        <div class="p-cat">🌤 Weather · API Dashboard</div>
-        <div class="p-title">Weather Dashboard</div>
-        <p class="p-desc">A beautifully designed real-time weather dashboard that fetches live data from OpenWeatherMap API. Features 7-day forecasts, hourly charts, wind/humidity/UV index cards, geolocation support, city search, and animated weather icons that change with conditions.</p>
-        <div class="p-techs">
-          <span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span>
-          <span class="ptag">OpenWeather API</span><span class="ptag">Chart.js</span>
-          <span class="ptag">Geolocation</span>
-        </div>
-        <div class="p-links">
-          <a href="#" class="p-link demo">⬡ Live Demo ↗</a>
-          <a href="#" class="p-link">⌥ GitHub ↗</a>
-        </div>
+        <div class="p-cat">🌐 Full Stack · Shop</div>
+        <div class="p-title">E-Commerce Website</div>
+        <p class="p-desc">Responsive online store with product listing, cart, wishlist, filters, and checkout with form validation.</p>
+        <div class="p-techs"><span class="ptag">React</span><span class="ptag">Node</span><span class="ptag">MongoDB</span></div>
+        <div class="p-links"><a href="#" class="p-link demo">Live ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
 
@@ -319,7 +314,8 @@
         <div class="p-title">Caregiver E-Health Watch</div>
         <p class="p-desc">Remote patient health monitoring system with real-time alerts and web dashboard for caregivers.</p>
         <div class="p-techs"><span class="ptag">HTML/CSS</span><span class="ptag">JS</span><span class="ptag">IoT</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Demo ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <div class="p-links"><a href="#" class="p-link demo">Demo ↗</a>
+        <a href="#" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
 
@@ -331,7 +327,8 @@
         <div class="p-title">Tic-Tac-Toe Game</div>
         <p class="p-desc">Interactive 2-player Tic-Tac-Toe with AI opponent, score tracker, and smooth win animations.</p>
         <div class="p-techs"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Play ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <div class="p-links"><a href="https://tictacc-toee.netlify.app/" class="p-link demo">Play ↗</a>
+        <a href="https://github.com/Mohor605/Small-Game-Project/tree/main/Tic%20tac%20toe" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
 
@@ -343,7 +340,8 @@
         <div class="p-title">Interactive Chessboard</div>
         <p class="p-desc">Fully interactive chessboard with legal move validation, piece highlighting, and turn management.</p>
         <div class="p-techs"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Play ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <div class="p-links"><a href="https://chesssboardd.netlify.app/" class="p-link demo">Play ↗</a>
+        <a href="https://github.com/Mohor605/Small-Game-Project/tree/main/Chess" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
 
@@ -355,19 +353,27 @@
         <div class="p-title">College Website</div>
         <p class="p-desc">Multi-page responsive college website with departments, events, gallery, admissions, and notices board.</p>
         <div class="p-techs"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Live ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <a href="#" class="p-link demo" onclick="document.getElementById('nit-modal').style.display='flex';return false;">⬡ Live Demo ↗</a>
+        <a href="https://github.com/Mohor605/bctNit" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
 
-    <!-- 9. E-Commerce Website -->
-    <div class="pcard small cat-fullstack reveal" data-cat="cat-fullstack">
-      <div class="pthumb t-ecom">🛒<span class="pthumb-label">E-Commerce</span></div>
+    <!-- 9. Weather Dashboard -->
+    <div class="pcard cat-weather reveal" data-cat="cat-weather">
+      <div class="pthumb t-weather"><img src="wd.jpeg" style="width:80%;height:100%;object-fit:cover;border-radius:inherit;"><span class="pthumb-label">API · Dashboard</span></div>
       <div class="pbody">
-        <div class="p-cat">🌐 Full Stack · Shop</div>
-        <div class="p-title">E-Commerce Website</div>
-        <p class="p-desc">Responsive online store with product listing, cart, wishlist, filters, and checkout with form validation.</p>
-        <div class="p-techs"><span class="ptag">React</span><span class="ptag">Node</span><span class="ptag">MongoDB</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Live ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <div class="p-cat">🌤 Weather · API Dashboard</div>
+        <div class="p-title">Weather Dashboard</div>
+        <p class="p-desc">A beautifully designed real-time weather dashboard that fetches live data from OpenWeatherMap API. Features 7-day forecasts, hourly charts, wind/humidity/UV index cards, geolocation support, city search, and animated weather icons that change with conditions.</p>
+        <div class="p-techs">
+          <span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span>
+          <span class="ptag">OpenWeather API</span><span class="ptag">Chart.js</span>
+          <span class="ptag">Geolocation</span>
+        </div>
+        <div class="p-links">
+          <a href="https://weatherdashboarrdd.netlify.app/" class="p-link demo">⬡ Live Demo ↗</a>
+          <a href="https://github.com/Mohor605/weatherDashboard/tree/main" class="p-link">⌥ GitHub ↗</a>
+        </div>
       </div>
     </div>
 
@@ -379,7 +385,7 @@
         <div class="p-title">Scientific Calculator</div>
         <p class="p-desc">Stylish calculator with basic and scientific functions, keyboard support, and dark/light toggle.</p>
         <div class="p-techs"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
-        <div class="p-links"><a href="#" class="p-link demo">Use ↗</a><a href="#" class="p-link">GitHub ↗</a></div>
+        <div class="p-links"><a href="https://calculaattoorr.netlify.app/" class="p-link demo">Use ↗</a><a href="https://github.com/Mohor605/Oasis-infobyte-internship-project/tree/master/Calculator" class="p-link">GitHub ↗</a></div>
       </div>
     </div>
     <!-- Show More Button -->
@@ -405,86 +411,166 @@
         <div class="cert-title">MEAN Full Stack Web Development</div>
         <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Complete certification in MongoDB, Express, Angular & Node.js full-stack development with hands-on project training.</p>
         <div class="cert-meta">
-          <span class="cert-date">2025</span>
-          <span class="cert-badge">VERIFIED ✓</span>
+          <span class="cert-date">20/08/2025</span>
+          <a href="iasld.jpeg" target="_blank" class="cert-badge" style="cursor:pointer;text-decoration:none;">VIEW ↗</a>
         </div>
       </div>
     </div>
 
-    <!-- 2. Blockchain & Cryptography -->
-    <div class="cert-card reveal">
-      <div class="cert-banner gold"></div>
-      <div class="cert-inner">
-        <div class="cert-icon-wrap">🔗</div>
-        <div class="cert-issuer">Online / NPTEL</div>
-        <div class="cert-title">Blockchain Technology & Cryptography</div>
-        <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Certification in blockchain fundamentals, cryptographic systems, consensus mechanisms, and smart contract development.</p>
-        <div class="cert-meta">
-          <span class="cert-date">2024</span>
-          <span class="cert-badge gold-b">CERTIFIED ✓</span>
-        </div>
-      </div>
+    <!-- 2. Programming Certificates -->
+<div class="cert-card reveal">
+  <div class="cert-banner gold"></div>
+
+  <div class="cert-inner">
+    <div class="cert-icon-wrap">💻</div>
+
+    <div class="cert-issuer">Online Certification</div>
+
+    <div class="cert-title">Programming Certificates</div>
+
+    <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">
+      Multiple programming certifications including C Programming and Java Programming.
+      Click below to view certificates.
+    </p>
+
+    <!-- Certificate Image Links -->
+    <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+
+      <a href="nptelc.jpeg" target="_blank">
+        C Certificate
+      </a>
+
+      <a href="npteljava.jpeg" target="_blank">
+        Java Certificate
+      </a>
+
     </div>
 
+    <div class="cert-meta">
+      <span class="cert-date">2024</span>
+      <span class="cert-badge gold-b">CERTIFIED ✓</span>
+    </div>
+  </div>
+</div>
     <!-- 3. OasisInfobyte Web Development Internship Certificate -->
     <div class="cert-card reveal">
-      <div class="cert-banner purple"></div>
-      <div class="cert-inner">
-        <div class="cert-icon-wrap">📱</div>
-        <div class="cert-issuer">OasisInfobyte</div>
-        <div class="cert-title">Web Development — Internship Completion Certificate</div>
-        <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Virtual internship in Web development covering core Android SDK, Java/Kotlin, UI components and deployment.</p>
-        <div class="cert-meta">
-          <span class="cert-date">2024</span>
-          <span class="cert-badge">COMPLETED ✓</span>
-        </div>
-      </div>
-    </div>
+  <div class="cert-banner purple"></div>
+  <div class="cert-inner">
+    <div class="cert-icon-wrap">📱</div>
+    <div class="cert-issuer">OasisInfobyte</div>
+    <div class="cert-title">Web Development — Internship Completion Certificate</div>
 
-    <!-- 4. Web Development & Android Development Workshop -->
-    <div class="cert-card reveal">
-      <div class="cert-banner"></div>
-      <div class="cert-inner">
-        <div class="cert-icon-wrap">🌐</div>
-        <div class="cert-issuer">Narula Institute of Technology</div>
-        <div class="cert-title">Web Development & Android Development Workshop Certificate</div>
-        <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Hands-on workshop certification covering modern web development practices, HTML5, CSS3, JavaScript and responsive design.</p>
-        <div class="cert-meta">
-          <span class="cert-date">2023</span>
-          <span class="cert-badge">VERIFIED ✓</span>
-        </div>
-      </div>
+    <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">
+      Virtual internship in Web Development covering HTML, CSS, JavaScript, responsive design, and project deployment.
+    </p>
+
+    <div class="cert-meta">
+      <span class="cert-date">2024</span>
+      <a href="oasiscomplete.jpeg"
+         target="_blank"
+         class="cert-badge"
+         style="cursor:pointer;text-decoration:none;">
+         VIEW ↗
+      </a>
     </div>
+  </div>
+</div>
+
+    <!-- 4.  Other Internship Certificates -->
+<div class="cert-card reveal">
+  <div class="cert-banner"></div>
+  <div class="cert-inner">
+    <div class="cert-icon-wrap">🌐</div>
+    <div class="cert-issuer">Internship Certificates</div>
+    <div class="cert-title">Other Internship & Workshop Certificates</div>
+
+    <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">
+      Collection of internship and workshop certifications including Web Development, Android Development, and other technical training programs.
+    </p>
+
+    <div class="cert-meta">
+      <span class="cert-date">2023 - 2025</span>
+
+      <a href="images/web_workshop_certificate.jpeg"
+         target="_blank"
+         class="cert-badge"
+         style="text-decoration:none;">
+         WEB ↗
+      </a>
+
+      <a href="images/android_workshop_certificate.jpeg"
+         target="_blank"
+         class="cert-badge"
+         style="text-decoration:none;">
+         ANDROID ↗
+      </a>
+
+      <a href="images/other_internship_certificate.jpeg"
+         target="_blank"
+         class="cert-badge"
+         style="text-decoration:none;">
+         INTERNSHIP ↗
+      </a>
+
+    </div>
+  </div>
+</div>
 
     <!-- 5. IEEE Computer Society -->
     <div class="cert-card reveal">
-      <div class="cert-banner gold"></div>
-      <div class="cert-inner">
-        <div class="cert-icon-wrap">⚡</div>
-        <div class="cert-issuer">IEEE Computer Society</div>
-        <div class="cert-title">IEEE CIS & MOVE Outreach India — Innovation Recognition</div>
-        <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Recognized for innovation and active contribution to IEEE Computer Society initiatives and outreach programs.</p>
-        <div class="cert-meta">
-          <span class="cert-date">2024</span>
-          <span class="cert-badge gold-b">IEEE 2025</span>
-        </div>
-      </div>
+  <div class="cert-banner gold"></div>
+  <div class="cert-inner">
+    <div class="cert-icon-wrap">⚡</div>
+    <div class="cert-issuer">IEEE Computer Society</div>
+    <div class="cert-title">IEEE CIS & MOVE Outreach India — Innovation Recognition</div>
+
+    <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">
+      Recognized for innovation and active contribution to IEEE Computer Society initiatives and outreach programs.
+    </p>
+
+    <div class="cert-meta">
+      <span class="cert-date">2024</span>
+
+      <a href="innovation.jpeg"
+         target="_blank"
+         class="cert-badge gold-b"
+         style="cursor:pointer;text-decoration:none;">
+         VIEW ↗
+      </a>
     </div>
+  </div>
+</div>
 
     <!-- 6. Bharatnatyam MA -->
     <div class="cert-card reveal">
-      <div class="cert-banner green"></div>
-      <div class="cert-inner">
-        <div class="cert-icon-wrap">💃</div>
-        <div class="cert-issuer">WB State Academy of Dance</div>
-        <div class="cert-title">Master of Arts in Bharatnatyam — First Class</div>
-        <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">Post-graduate degree in classical Bharatnatyam dance from West Bengal State Academy of Dance, passed with First Class distinction.</p>
-        <div class="cert-meta">
-          <span class="cert-date">2025</span>
-          <span class="cert-badge green-b">FIRST CLASS 🥇</span>
-        </div>
-      </div>
+  <div class="cert-banner green"></div>
+
+  <div class="cert-inner">
+
+    <a href="bh.jpeg" target="_blank">
+      <img src="bh.jpeg"
+           style="width:40px;height:40px;object-fit:contain;border-radius:6px;">
+    </a>
+
+    <div class="cert-issuer">WB State Academy of Dance</div>
+
+    <div class="cert-title">Master of Arts in Bharatnatyam — First Class</div>
+
+    <p style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-top:0.4rem">
+      Post-graduate degree in classical Bharatnatyam dance from West Bengal State Academy of Dance, passed with First Class distinction.
+    </p>
+
+    <div class="cert-meta">
+      <span class="cert-date">2025</span>
+
+      <a href="bh.jpeg" target="_blank" style="text-decoration:none;">
+        <span class="cert-badge green-b">FIRST CLASS 🥇</span>
+      </a>
+
     </div>
+
+  </div>
+</div>
 
   </div>
 </section>
@@ -516,7 +602,78 @@
       </div>
     </div>
 
-    <!-- 2. IEEE Volunteer -->
+    <!-- 2. ShadowFox Internship -->
+<div class="intern-card">
+  <div class="intern-dot">🛡️</div>
+  <div class="intern-body">
+    <div class="intern-top">
+      <div class="intern-title">Cyber Security & Web Development Intern</div>
+      <span class="intern-period">2024 · Virtual</span>
+    </div>
+    <div class="intern-org">ShadowFox — Remote Internship</div>
+    <p class="intern-desc">
+      Completed an internship focusing on Cyber Security fundamentals and secure Web development practices. Worked on vulnerability analysis, secure coding principles, and web-based security implementations.
+    </p>
+    <div class="intern-tags">
+      <span class="itag-pill">Cyber Security</span>
+      <span class="itag-pill">Web Security</span>
+      <span class="itag-pill">HTML</span>
+      <span class="itag-pill">JavaScript</span>
+      <span class="itag-pill">Networking</span>
+    </div>
+    <div class="intern-status completed">Internship Completed · Certificate Issued</div>
+  </div>
+</div>
+
+
+<!-- 3. Pinnacle Web Development Internship -->
+<div class="intern-card">
+  <div class="intern-dot">💻</div>
+  <div class="intern-body">
+    <div class="intern-top">
+      <div class="intern-title">Web Development Intern</div>
+      <span class="intern-period">2024 · Virtual</span>
+    </div>
+    <div class="intern-org">Pinnacle — Remote Internship</div>
+    <p class="intern-desc">
+      Participated in a Web development internship where modern front-end technologies were used to build responsive web applications. Developed skills in UI design, responsive layouts, and project deployment.
+    </p>
+    <div class="intern-tags">
+      <span class="itag-pill">HTML</span>
+      <span class="itag-pill">CSS</span>
+      <span class="itag-pill">JavaScript</span>
+      <span class="itag-pill">Responsive Design</span>
+      <span class="itag-pill">Git</span>
+    </div>
+    <div class="intern-status completed">Internship Completed · Certificate Issued</div>
+  </div>
+</div>
+
+
+<!-- 4. Eduskills Web Development Internship -->
+<div class="intern-card">
+  <div class="intern-dot">🌐</div>
+  <div class="intern-body">
+    <div class="intern-top">
+      <div class="intern-title">Web Development Intern</div>
+      <span class="intern-period">2024 · Virtual</span>
+    </div>
+    <div class="intern-org">Eduskills — Virtual Internship</div>
+    <p class="intern-desc">
+      Completed a Web Development internship under the Eduskills platform, focusing on modern web technologies, responsive UI design, and practical project development.
+    </p>
+    <div class="intern-tags">
+      <span class="itag-pill">HTML</span>
+      <span class="itag-pill">CSS</span>
+      <span class="itag-pill">JavaScript</span>
+      <span class="itag-pill">Bootstrap</span>
+      <span class="itag-pill">Web Design</span>
+    </div>
+    <div class="intern-status completed">Internship Completed · Certificate Issued</div>
+  </div>
+</div>
+
+    <!-- 5. IEEE Volunteer -->
     <div class="intern-card">
       <div class="intern-dot">⚡</div>
       <div class="intern-body">
@@ -537,26 +694,7 @@
       </div>
     </div>
 
-    <!-- 3. Web Dev Academic -->
-    <div class="intern-card">
-      <div class="intern-dot">💻</div>
-      <div class="intern-body">
-        <div class="intern-top">
-          <div class="intern-title">MEAN Full Stack Development Training</div>
-          <span class="intern-period">2025 · IALSD</span>
-        </div>
-        <div class="intern-org">IALSD — Certified Industrial Training</div>
-        <p class="intern-desc">Completed certified industrial training in MEAN Full Stack Web Development. Covered MongoDB database design, Express.js REST API development, Angular frontend framework, and Node.js server-side programming. Built multiple full-stack projects during training and received industry certification on completion.</p>
-        <div class="intern-tags">
-          <span class="itag-pill">MongoDB</span>
-          <span class="itag-pill">Express.js</span>
-          <span class="itag-pill">Angular</span>
-          <span class="itag-pill">Node.js</span>
-          <span class="itag-pill">Full Stack</span>
-        </div>
-        <div class="intern-status completed">Training Completed · IALSD Certified 2025</div>
-      </div>
-    </div>
+    
 
   </div>
 </section>
@@ -571,18 +709,18 @@
       <div class="clinks">
         <a href="mailto:mohormoumi@gmail.com" class="clink">📧 mohormoumi@gmail.com<span class="arr">↗</span></a>
         <a href="tel:8101012184" class="clink">📞 8101012184<span class="arr">↗</span></a>
-        <a href="#" class="clink">🌐 Habra, North 24 Parganas, WB<span class="arr">↗</span></a>
+        <a href="https://www.google.com/maps/place/Habra,+North+24+Parganas,+West+Bengal" target="_blank" class="clink">🌐 Habra, North 24 Parganas, WB<span class="arr">↗</span></a>
         <a href="https://www.linkedin.com/in/mohor-banerjee-96b2a4322" class="clink">💼 LinkedIn<span class="arr">↗</span></a>
       </div>
     </div>
     <div class="contact-form reveal">
       <div class="cf-row">
-        <div><label class="cf-label">Name</label><input class="cf-field" type="text" placeholder="Your name"></div>
-        <div><label class="cf-label">Email</label><input class="cf-field" type="email" placeholder="your@email.com"></div>
+        <div><label class="cf-label">Name</label><input class="cf-field" type="text" id="from_name" placeholder="Your name"></div>
+        <div><label class="cf-label">Email</label><input class="cf-field" type="email" id="from_email" placeholder="your@email.com"></div>
       </div>
-      <div><label class="cf-label">Subject</label><input class="cf-field" type="text" placeholder="Internship / Collaboration"></div>
-      <div><label class="cf-label">Message</label><textarea class="cf-field" rows="5" placeholder="Hi Mohor, I'd like to..."></textarea></div>
-      <button class="btn btn-rose" onclick="doSend(this)" style="cursor:none">✉ Send Message</button>
+      <div><label class="cf-label">Subject</label><input class="cf-field" type="text" id="subject" placeholder="Internship / Collaboration"></div>
+      <div><label class="cf-label">Message</label><textarea class="cf-field" rows="5" id="message" placeholder="Hi Mohor, I'd like to..."></textarea></div>
+      <button class="btn btn-rose" onclick="doSend(this)" style="cursor:pointer">✉ Send Message</button>
     </div>
   </div>
 </section>
@@ -660,6 +798,36 @@
   <div class="chat-foot">
     <input id="chat-inp" type="text" placeholder="Type your question..." onkeydown="if(event.key==='Enter')sendChat()">
     <button id="chat-snd" onclick="sendChat()">➤</button>
+  </div>
+</div>
+
+<!-- Blockchain Video Modal -->
+<div id="blockchain-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;" onclick="this.style.display='none'">
+  <div style="position:relative;width:90%;max-width:800px;" onclick="event.stopPropagation()">
+    <button onclick="document.getElementById('blockchain-modal').style.display='none'" style="position:absolute;top:-40px;right:0;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕ Close</button>
+    <video width="100%" controls autoplay style="border-radius:12px;">
+      <source src="e-voting-live-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!-- Medico Video Modal -->
+<div id="medico-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;" onclick="this.style.display='none'">
+  <div style="position:relative;width:90%;max-width:800px;" onclick="event.stopPropagation()">
+    <button onclick="document.getElementById('medico-modal').style.display='none'" style="position:absolute;top:-40px;right:0;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕ Close</button>
+    <video width="100%" controls autoplay style="border-radius:12px;">
+      <source src="medico-live-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!-- Nit Video Modal -->
+<div id="nit-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;" onclick="this.style.display='none'">
+  <div style="position:relative;width:90%;max-width:800px;" onclick="event.stopPropagation()">
+    <button onclick="document.getElementById('nit-modal').style.display='none'" style="position:absolute;top:-40px;right:0;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕ Close</button>
+    <video width="100%" controls autoplay style="border-radius:12px;">
+      <source src="nit-live-demo.mp4" type="video/mp4">
+    </video>
   </div>
 </div>
 

@@ -55,17 +55,38 @@ document.querySelectorAll('#skills').forEach(function(el) { skillObs.observe(el)
 
 // ── CONTACT FORM ──
 function doSend(btn) {
-  btn.textContent = 'Sending...';
-  btn.style.opacity = '0.6';
-  setTimeout(function() {
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = 'var(--teal)';
-    btn.style.opacity = '1';
-    setTimeout(function() {
-      btn.textContent = '✉ Send Message';
-      btn.style.background = '';
-    }, 2500);
-  }, 900);
+  const name    = document.getElementById("from_name").value.trim();
+  const email   = document.getElementById("from_email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill in Name, Email and Message.");
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Sending...";
+
+  emailjs.send("service_rvv2oki", "template_5mniuhd", {
+    from_name:  name,
+    from_email: email,
+    subject:    subject,
+    message:    message
+  })
+  .then(() => {
+    btn.textContent = "✅ Sent!";
+    document.getElementById("from_name").value  = "";
+    document.getElementById("from_email").value = "";
+    document.getElementById("subject").value    = "";
+    document.getElementById("message").value    = "";
+    setTimeout(() => { btn.textContent = "✉ Send Message"; btn.disabled = false; }, 3000);
+  })
+  .catch((err) => {
+    btn.textContent = "❌ Failed. Try again.";
+    btn.disabled = false;
+    console.error(err);
+  });
 }
 
 // ── CHATBOT ──
@@ -154,3 +175,4 @@ function qask(t) {
   document.getElementById('chat-inp').value = t;
   sendChat();
 }
+
